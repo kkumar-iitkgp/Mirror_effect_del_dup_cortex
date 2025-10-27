@@ -1,7 +1,7 @@
 # CC_GSABA
 The Cerebral Cortical Gene-Set Burden Analysis (CC-GSBA) pipeline, part of the PGC-CNV working group, is designed to investigate the impact of Copy Number Variants (CNVs) on Cognitive Ability using Cerebral Cortical Gene-Set Burden Analysis. This repository contains all the code and data required to reproduce the figures and statistical analyses for the project. 
 <p align="center">
- <img src="CC-GSBA_logo.png" alt="CC-GSBA_logo" width="300"/>
+ <img src="CC-GSBA_logo.png" alt="CC-GSBA_logo" width="400"/>
 </p>
 
 ## Project Title
@@ -17,7 +17,7 @@ This figure outlines our methodology for associating CNVs with cognitive ability
 Regression Analysis: A regression model is applied to test for a region-specific association between CNV burden and cognitive ability, while controlling for the genome-wide burden and other covariates.  Cognitive ability (Y) is modeled as a function of the Gene-Set Burden and the Genome Burden. The model also adjusts for standard covariates such as age, sex, and ancestry.
 
 <p align="center">
- <img src="CC-GSBA_Workflow.png" alt="CC-GSBA_Workflow" width="900"/>
+ <img src="CC-GSBA_Workflow.png" alt="CC-GSBA_Workflow" width="1000"/>
 </p>
 
 
