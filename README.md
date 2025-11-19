@@ -4,7 +4,7 @@
 Mirror effect of genomic deletions and duplications on cognitive ability across the human cerebral cortex
 
 ## Citation
-If you use this project or its code in your research, please cite this repository. 
+If you use this project or code in your research, please cite the following: 
 
 - **Papers:**
 1) Core Method: **Kuldeep Kumar**, **Sayeh Kazem**, et al. "Mirror effect of genomic deletions and duplications on cognitive ability across the human cerebral cortex." bioRxiv 2025.01.06.631492; 2025.
@@ -15,25 +15,25 @@ If you use this project or its code in your research, please cite this repositor
 Code for the analysis and figures for the Mirror effect of genomic deletions and duplications across the cortex. The repository is organized into three main components: 
 * CC-GSBA: cerebral-cortex gene-set burden analysis (CC-GSBA) pipeline, with simulated toy phenotype data and run;
 * Figs: R Markdown (.Rmd) files containing the steps and code to generate the main figures and their associated statistics;
-* * SupFigs: R Markdown (.Rmd) files containing the steps and code for generating the supplementary figures. 
+* SupFigs: R Markdown (.Rmd) files containing the steps and code for generating the supplementary figures. 
 
 In addition, the gene-sets used in the paper (due to size), along with a version of this code, are hosted on **Zenodo** at: [https://doi.org/10.5281/zenodo.17593039](https://doi.org/10.5281/zenodo.17593039)
 
 ## CC-GSBA Workflow
-Our methodology for associating CNVs with cognitive ability by leveraging gene expression data across cortical regions. The analysis integrates genotypic and phenotypic data from large population cohorts with gene expression data from the Allen Human Brain Atlas (AHBA).
+Our methodology for associating copy number variants (CNVs) with cognitive ability leverages gene expression data across cortical regions. The analysis integrates genotypic and phenotypic data from large population cohorts with gene expression data from the Allen Human Brain Atlas (AHBA).
 
 - Gene Assignment: Each gene is mapped to cortical regions where it shows preferential expression (z-score > 0.5). This process is repeated for all genes, resulting in 180 distinct regional gene sets.
 - CNV Aggregation: For each individual, we calculate two burden metrics for each cortical region:
-- Gene-Set Burden: The count of CNVs overlapping genes within a specific regional gene set.
-- Genome Burden: The count of CNVs outside that specific regional gene set, serving as a genome-wide control.
-Regression Analysis: A regression model is applied to test for a region-specific association between CNV burden and cognitive ability, while controlling for the genome-wide burden and other covariates.  Cognitive ability (Y) is modeled as a function of the Gene-Set Burden and the Genome Burden. The model also adjusts for standard covariates such as age, sex, and ancestry.
+- - Gene-Set Burden: The count of CNVs overlapping genes within a specific regional gene set.
+- - Genome Burden: The count of CNVs outside that specific regional gene set, serving as a genome-wide control.
+- Regression Analysis: A regression model is applied to test for a region-specific association between CNV burden and cognitive ability, while controlling for the genome-wide burden and other covariates.  Cognitive ability (Y) is modeled as a function of the Gene-Set Burden and the Genome Burden. The model also adjusts for standard covariates such as age, sex, and ancestry.
 
 <p align="center">
  <img src="CC-GSBA/CC-GSBA_Workflow.png" alt="CC-GSBA_Workflow" width="1000"/>
 </p>
 
 #### The core script:
-The CC-GSBA script is the core pipeline for testing the association between CNVs (Copy Number Variations) aggregated in cortex-specific gene sets and cognitive ability.
+The CC-GSBA script is the core pipeline for testing the association between CNVs aggregated in cortex-specific gene sets and cognitive ability.
 
 #### Data Used in This Repository : 
 
